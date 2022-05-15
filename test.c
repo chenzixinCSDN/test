@@ -1,9 +1,24 @@
 #include <stdio.h>
 int main()
 {
-	printf("hhhhh");
+	//有1、2、3、4个数字，能组成多少个互不相同且无重复数字的三位数？都是多少？
+
+	int frist , second , third ;
+	for (frist = 1; frist < 5; frist++)
+	{
+		for (second = 1; second< 5; second++)
+		{
+			for (third =1; third< 5; third++)
+			{
+				if (frist!=second&&frist!=third&&second!=third)
+				{
+					printf("%d,%d,%d\n", frist, second, third);
+				}
+			
+			}
+		}
+	}
+
 	return 0;
-	//改变hahahaha
-	//eeeeeeeeee
-	
+
 }
